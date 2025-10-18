@@ -1,3 +1,7 @@
 https://www.iosco.org/i-scan/?SUBSECTION=main&VALIDATIONDATESTART=&NCA_ID=&CATEGORYID=&VALIDATIONDATEEND=&ID=&PRODUCTID=&KEYWORDS=&page=1
+https://www.iosco.org/i-scan/ (export option)
 https://www.fca.org.uk/consumers/warning-list-unauthorised-firms
 https://www.scamwatch.gov.au/about-us/news-and-alerts?f%5B0%5D=news_type%3A2
+https://moneysmart.gov.au/check-and-report-scams/investor-alert-list (export option)
+
+
