@@ -1,4 +1,4 @@
-def extract_ip_and_screenshot(api_response):
+def extract_metadata(api_response):
     """
     Extract IP addresses from 'dns' -> 'a' and screenshot URL from API response.
     
@@ -17,8 +17,17 @@ def extract_ip_and_screenshot(api_response):
     
     # Extract screenshot URL if present (assuming at top level of 'data')
     screenshot_url = data.get('screenshot')
+
+    # Get DNS record
+    dns_records = data.get('properties', {}).get('dns', {}).get('ns', [])
+
+    # Get Registration date:
+    registration_date = data.get('properties', {}).get('whois', {}).get('creation date', [])
+
+    # Get MX Records:
+    mx_records = data.get('properties', {}).get('dns', {}).get('mx', [])
     
-    return ip_list, screenshot_url
+    return ip_list, dns_records, registration_date, mx_records
 
 
 # Example: Assuming 'response' holds your JSON as a dict

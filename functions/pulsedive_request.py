@@ -56,4 +56,4 @@ def scan_indicator_and_get_results(indicator):
 
 # Example usage:
 # result = scan_indicator_and_get_results("example.com")
-# print(result)
+#print(result)
